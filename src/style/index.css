@@ -1,3 +1,8 @@
 body {
   margin: 0;
 }
+.productContainer {
+  background-color: red;
+  margin-top: 10rem;
+  font-size: 5rem;
+}
