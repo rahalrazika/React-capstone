@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectedProduct, clearSelectedProduct } from '../actions/productActions';
+import Loading from './loading';
 
 const DetailPage = () => {
   const product = useSelector((state) => state.product);
@@ -14,9 +15,7 @@ const DetailPage = () => {
   const fetchProductDetail = async (id) => {
     const response = await axios
       .get(`https://fakestoreapi.com/products/${id}`)
-      .catch((err) => {
-        console.log('Err: ', err);
-      });
+      .catch((err) => err);
     dispatch(selectedProduct(response.data));
   };
 
@@ -30,7 +29,7 @@ const DetailPage = () => {
 
     <div className="">
       {Object.keys(product).length === 0 ? (
-        <div>...Loading</div>
+        <Loading />
       ) : (
         <div>
           <img src={image} alt={title} />
