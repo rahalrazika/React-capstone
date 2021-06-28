@@ -1,8 +1,19 @@
 body {
   margin: 0;
 }
+ d-flex {
+  display: flex;
+} 
+.container {
+  font-size: 2rem;
+}
 .productContainer {
-  background-color: red;
   margin-top: 10rem;
-  font-size: 5rem;
+}
+.product {
+  width: 33%;
+}
+.image img {
+  width: 20rem;
+  background-color: red;
 }
