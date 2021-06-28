@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial,sans-serif;
 }
  d-flex {
   display: flex;
@@ -14,6 +15,6 @@ body {
   width: 33%;
 }
 .image img {
-  width: 20rem;
+  width: 10rem;
   background-color: red;
 }

@@ -1,10 +1,44 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../style/navBar.css';
+import SearchIcon from '@material-ui/icons/Search';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
 const NavBar = () => (
-  <div>
-    <div>
-      <h1>Store</h1>
+  <nav className="navbar">
+
+    <Link to="/">
+      <img
+        className="navbar-logo"
+        src="https://static.vecteezy.com/system/resources/previews/002/114/693/original/online-shop-logo-template-design-illustration-vector.jpg"
+        alt="logo"
+      />
+    </Link>
+    <div className="nav-search">
+      <input className="search-input" />
+      <SearchIcon className="nav-search-icon" />
     </div>
-  </div>
+
+    <div className="nav-links-container">
+      <Link to="/" className="nav-links">
+        <div className="nav-options">
+          <span className="text-one">Hello</span>
+          <span className="text-two">Raze</span>
+        </div>
+      </Link>
+      <Link to="/" className="nav-links">
+        <div className="nav-options">
+          <span className="text-one">Return</span>
+          <span className="text-two">Home</span>
+        </div>
+      </Link>
+      <Link to="/" className="nav-links">
+        <div className="cart">
+          <ShoppingBasketIcon />
+        </div>
+      </Link>
+    </div>
+
+  </nav>
 );
 export default NavBar;

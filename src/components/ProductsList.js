@@ -6,7 +6,6 @@ import { listProducts } from '../actions/productActions';
 import Loading from './loading';
 
 const ProductsList = () => {
-  // const products = useSelector((state) => state);
   const [loading, setLoading] = useState(false);
 
   const dispatch = useDispatch();
