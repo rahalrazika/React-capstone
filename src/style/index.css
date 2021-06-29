@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;1,700&display=swap');
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 .d-flex {
@@ -8,23 +8,72 @@ body {
 }
 
 .container {
-  font-size: 2rem;
-}
+ 
+ margin-left: 5px;
+ flex-flow: row wrap;            
+ align-content : center;
+ justify-content : center;
+ align-items : center;
 
-.productContainer {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.product {
-  width: 33%;
-}
-
-.image img {
-  width: 10rem;
-  background-color: red;
 }
 
 .banner img {
-  background-color: greenyellow;
-  width: 20px;
+  margin-top: 1rem;
+  width: 100%;
+  height: 30rem;
+  object-fit:cover;
+  mask-image: linear-gradient(to bottom, rgb(0,0,0,1), rgb(0,0,0,0.50));
+}
+.product {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20rem;
+  height: 30rem;
+  text-align: center;
+  margin: 2rem 2rem;
+  padding: 2rem;
+}
+
+.product img {
+  width: 12rem;
+  height: 19rem;
+  object-fit: contain;
+}
+
+.product img:hover {
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+
+}
+.link {
+  text-decoration: none;
+}
+
+.product button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  
+
+}
+.product .title {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  color: #000;
+  height: 4rem;
+}
+.product .price {
+  color: rgb(197 190 190);
+  font-size: 22px;
+  margin-top: 1rem;
 }

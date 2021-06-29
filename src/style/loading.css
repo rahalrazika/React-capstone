@@ -4,6 +4,8 @@
   position: relative;
   width: 80px;
   height: 80px;
+  margin-top: 20rem;
+  margin-left: 40rem;
 }
 
 .lds-spinner div {
@@ -21,7 +23,7 @@
   height: 18px;
   border-radius: 20%;
   background: #febd69;
-  margin-left: 45%;
+  margin-left: 95%;
 }
 
 .lds-spinner div:nth-child(1) {

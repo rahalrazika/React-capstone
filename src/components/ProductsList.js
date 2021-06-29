@@ -26,7 +26,9 @@ const ProductsList = () => {
       <div className="banner">
         <img src={banner} alt="banner" />
       </div>
-      { loading ? <Product /> : <Loading />}
+      <div className="container d-flex">
+        { loading ? <Product /> : <Loading />}
+      </div>
     </div>
   );
 };
