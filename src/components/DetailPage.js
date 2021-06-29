@@ -26,17 +26,26 @@ const DetailPage = () => {
     };
   }, [productId]);
   return (
-
     <div className="">
       {Object.keys(product).length === 0 ? (
         <Loading />
       ) : (
-        <div>
-          <img src={image} alt={title} />
-          <div className="title">{title}</div>
-          <div className="price">{price}</div>
-          <div className="category">{category}</div>
-          <div className="description">{description}</div>
+        <div className="detail-container d-flex">
+          <div className="detail-image">
+            <img src={image} alt={title} />
+          </div>
+          <div className="detail-description d-flex">
+            <div className="category">{category}</div>
+            <div className="title">{title}</div>
+            <div className="price">
+              {price}
+              <span>$</span>
+            </div>
+            <div className="description">{description}</div>
+            <button type="button">ADD TO bag </button>
+
+          </div>
+
         </div>
 
       )}
