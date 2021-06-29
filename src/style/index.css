@@ -86,8 +86,8 @@ body {
 }
 
 .detail-image img {
-  width:25rem;
-  height: 30rem;
+  width: 70%;
+  height: 90%;
   object-fit: contain;
 }
 .detail-description {

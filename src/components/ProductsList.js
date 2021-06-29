@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { connect, useDispatch } from 'react-redux';
 import axios from 'axios';
-import { useDispatch } from 'react-redux';
 import Product from './Product';
 import { listProducts } from '../actions/productActions';
 import Loading from './loading';
@@ -27,10 +27,10 @@ const ProductsList = () => {
         <img src={banner} alt="banner" />
       </div>
       <div className="container d-flex">
-        { loading ? <Product /> : <Loading />}
+        {loading ? <Product /> : <Loading />}
       </div>
     </div>
   );
 };
 
-export default ProductsList;
+export default connect(null, { listProducts })(ProductsList);

@@ -5,11 +5,8 @@ import { useSelector } from 'react-redux';
 const Product = () => {
   const products = useSelector((state) => state.listOfProduct.products);
   const list = products.map((product) => {
-    const {
-      id, title, price, image, category,
-    } = product;
+    const { id, title, price, image, category } = product;
     return (
-
       <Link className="link" to={`/product/${id}`} key={id}>
         <div className="product">
           <img src={image} alt={title} />
@@ -19,18 +16,11 @@ const Product = () => {
             <span>$</span>
           </div>
           <button type="button">{category}</button>
-
         </div>
-
       </Link>
-
     );
   });
-  return (
-    <>
-      {list}
-    </>
-  );
+  return <>{list}</>;
 };
 
 export default Product;

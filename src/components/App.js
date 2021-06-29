@@ -10,11 +10,9 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-
           <Route path="/" exact component={ProductsList} />
           <Route path="/product/:productId" component={DetailPage} />
         </Switch>
-
       </Router>
     </div>
   );
