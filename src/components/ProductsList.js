@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import Product from './Product';
 import { listProducts } from '../actions/productActions';
 import Loading from './loading';
+import banner from '../assets/banner.jpg';
 
 const ProductsList = () => {
   const [loading, setLoading] = useState(false);
@@ -22,6 +23,9 @@ const ProductsList = () => {
   }, []);
   return (
     <div className="productContainer">
+      <div className="banner">
+        <img src={banner} alt="banner" />
+      </div>
       { loading ? <Product /> : <Loading />}
     </div>
   );

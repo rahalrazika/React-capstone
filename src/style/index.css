@@ -1,20 +1,30 @@
 body {
   margin: 0;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
 }
- d-flex {
+
+.d-flex {
   display: flex;
-} 
+}
+
 .container {
   font-size: 2rem;
 }
+
 .productContainer {
-  margin-top: 10rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .product {
   width: 33%;
 }
+
 .image img {
   width: 10rem;
   background-color: red;
+}
+
+.banner img {
+  background-color: greenyellow;
+  width: 20px;
 }

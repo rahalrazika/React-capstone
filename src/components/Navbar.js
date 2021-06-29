@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../style/navBar.css';
 import SearchIcon from '@material-ui/icons/Search';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
 const NavBar = () => (
   <nav className="navbar">
@@ -22,19 +21,8 @@ const NavBar = () => (
     <div className="nav-links-container">
       <Link to="/" className="nav-links">
         <div className="nav-options">
-          <span className="text-one">Hello</span>
-          <span className="text-two">Raze</span>
-        </div>
-      </Link>
-      <Link to="/" className="nav-links">
-        <div className="nav-options">
           <span className="text-one">Return</span>
           <span className="text-two">Home</span>
-        </div>
-      </Link>
-      <Link to="/" className="nav-links">
-        <div className="cart">
-          <ShoppingBasketIcon />
         </div>
       </Link>
     </div>
