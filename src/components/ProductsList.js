@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { connect, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import axios from 'axios';
 import Product from './Product';
-import { listProducts } from '../actions/productActions';
+import { listProducts, filterProducts } from '../actions/productActions';
 import Loading from './loading';
 import banner from '../assets/banner.jpg';
 
-const ProductsList = () => {
+const ProductsList = (props) => {
+  const { filteredProducts, filterProducts } = props;
   const [loading, setLoading] = useState(false);
 
   const dispatch = useDispatch();
@@ -15,6 +17,7 @@ const ProductsList = () => {
       .get('https://fakestoreapi.com/products')
       .catch((err) => err);
     dispatch(listProducts(response.data));
+    filterProducts(response.data);
   };
 
   useEffect(() => {
@@ -27,10 +30,32 @@ const ProductsList = () => {
         <img src={banner} alt="banner" />
       </div>
       <div className="container d-flex">
-        {loading ? <Product /> : <Loading />}
+        {loading ? (
+          filteredProducts.map((singleProduct) => (
+            <Product key={singleProduct.id} productData={singleProduct} />
+          ))
+        ) : (
+          <Loading />
+        )}
       </div>
     </div>
   );
 };
+ProductsList.propTypes = {
+  filteredProducts: PropTypes.instanceOf(Array),
+  filterProducts: PropTypes.func,
 
-export default connect(null, { listProducts })(ProductsList);
+};
+
+ProductsList.defaultProps = {
+  filteredProducts: [],
+  filterProducts: null,
+};
+
+const mapStateToProps = (state) => ({
+  filteredProducts: state.listOfProduct.filteredProducts,
+});
+
+export default connect(mapStateToProps, { listProducts, filterProducts })(
+  ProductsList,
+);

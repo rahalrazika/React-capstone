@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import '../style/navBar.css';
 import SearchIcon from '@material-ui/icons/Search';
 import { connect } from 'react-redux';
-// import { filterProducts } from '../actions/productActions';
+import { filterProducts } from '../actions/productActions';
 
-const NavBar = () => {
+const NavBar = ({ filterProducts, allProducts }) => {
   const [search, setSearch] = useState('');
-  console.log(search);
-  console.log();
+
   return (
     <nav className="navbar">
       <Link to="/">
@@ -23,7 +23,10 @@ const NavBar = () => {
           className="search-input"
           onChange={(e) => setSearch(e.target.value)}
         />
-        <SearchIcon className="nav-search-icon" />
+        <SearchIcon
+          className="nav-search-icon"
+          onClick={() => filterProducts(allProducts, search)}
+        />
       </div>
 
       <div className="nav-links-container">
@@ -37,7 +40,17 @@ const NavBar = () => {
     </nav>
   );
 };
+NavBar.propTypes = {
+  filterProducts: PropTypes.func,
+  allProducts: PropTypes.instanceOf(Array),
+};
 
-const mapStateToProps = (state) => console.log(state.listOfProduct.products);
+NavBar.defaultProps = {
+  filterProducts: null,
+  allProducts: [],
+};
+const mapStateToProps = (state) => ({
+  allProducts: state.listOfProduct.products,
+});
 
-export default connect(mapStateToProps)(NavBar);
+export default connect(mapStateToProps, { filterProducts })(NavBar);

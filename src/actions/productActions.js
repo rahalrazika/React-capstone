@@ -1,5 +1,8 @@
 import {
-  LIST_PRODUCTS, SELECTED_PRODUCT, CLEAR_SELECTED_PRODUCT, FILTER_PRODUCTS,
+  LIST_PRODUCTS,
+  SELECTED_PRODUCT,
+  CLEAR_SELECTED_PRODUCT,
+  FILTER_PRODUCTS,
 } from './actionTypes';
 
 export const listProducts = (products) => ({
@@ -14,7 +17,12 @@ export const selectedProduct = (product) => ({
 export const clearSelectedProduct = () => ({
   type: CLEAR_SELECTED_PRODUCT,
 });
-export const filterProducts = (data) => ({
-  type: FILTER_PRODUCTS,
-  data,
-});
+export const filterProducts = (allData, targetText) => {
+  const data = targetText
+    ? allData.filter((item) => item.title.toLowerCase().includes(targetText.toLowerCase()))
+    : allData;
+  return {
+    type: FILTER_PRODUCTS,
+    data,
+  };
+};
