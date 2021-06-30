@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render loading components 1`] = `[Function]`;
+
+exports[`expect to render loading components 2`] = `[Function]`;
+
+exports[`expect to render product components 1`] = `[Function]`;
+
+exports[`expect to render product components 2`] = `[Function]`;
+
+exports[`expect to render productList components 1`] = `[Function]`;
+
+exports[`expect to render productList components 2`] = `[Function]`;
