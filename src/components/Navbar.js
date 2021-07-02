@@ -8,7 +8,8 @@ import { filterProducts } from '../actions/productActions';
 
 const NavBar = ({ filterProducts, allProducts }) => {
   const [search, setSearch] = useState('');
-
+  const handleOnchange = (e) => setSearch(e.target.value);
+  const handleOnsubmit = () => filterProducts(allProducts, search);
   return (
     <nav className="navbar">
       <Link to="/">
@@ -21,11 +22,11 @@ const NavBar = ({ filterProducts, allProducts }) => {
       <div className="nav-search">
         <input
           className="search-input"
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={handleOnchange}
         />
         <SearchIcon
           className="nav-search-icon"
-          onClick={() => filterProducts(allProducts, search)}
+          onClick={handleOnsubmit}
         />
       </div>
 

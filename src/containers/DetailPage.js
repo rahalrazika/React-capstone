@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectedProduct, clearSelectedProduct } from '../actions/productActions';
-import Loading from './loading';
+import Loading from '../components/loading';
 
 const DetailPage = () => {
   const product = useSelector((state) => state.product);

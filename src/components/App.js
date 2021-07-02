@@ -1,8 +1,8 @@
 import '../style/App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './Navbar';
-import ProductsList from './ProductsList';
-import DetailPage from './DetailPage';
+import ProductsList from '../containers/ProductsList';
+import DetailPage from '../containers/DetailPage';
 
 function App() {
   return (

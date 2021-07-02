@@ -77,6 +77,7 @@ Contributions, issues and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+- Catalogue of Dog Clothes 
 -  Odin projects
 -  Microverse
 -  [Fake Store Api](https://fakestoreapi.com/)

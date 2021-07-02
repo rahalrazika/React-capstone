@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Product = ({ productData }) => {
@@ -19,6 +19,13 @@ const Product = ({ productData }) => {
       </div>
     </Link>
   );
+};
+Product.propTypes = {
+  productData: PropTypes.instanceOf(Object),
+};
+
+Product.defaultProps = {
+  productData: {},
 };
 
 export default Product;
