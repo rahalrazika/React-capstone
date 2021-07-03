@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import Product from './Product';
 import { listProducts, filterProducts } from '../actions/productActions';
-import Loading from './loading';
+import Loading from '../components/loading';
 import banner from '../assets/banner.jpg';
 
 const ProductsList = (props) => {

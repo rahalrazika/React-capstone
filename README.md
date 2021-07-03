@@ -77,7 +77,7 @@ Contributions, issues and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- Catalogue of Dog Clothes 
+- [Catalogue of Dog Clothes](https://www.behance.net/gallery/24531031/Pimp-my-DOG-Online-store-E-commerse-project) [by Denys Chagaida](https://www.behance.net/chagaida)
 -  Odin projects
 -  Microverse
 -  [Fake Store Api](https://fakestoreapi.com/)

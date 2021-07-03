@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import ProductsList from '../components/ProductsList';
+import ProductsList from '../containers/ProductsList';
 import store from '../reducers/store';
 import APP from '../components/App';
 
