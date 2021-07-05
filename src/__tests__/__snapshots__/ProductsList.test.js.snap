@@ -1,5 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`expect to render productList components 1`] = `[Function]`;
-
-exports[`expect to render productList components 2`] = `[Function]`;

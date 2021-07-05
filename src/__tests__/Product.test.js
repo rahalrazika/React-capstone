@@ -18,7 +18,7 @@ it('expect id to be 1 ', () => {
 
 it('expect price equal to price value ', () => {
   const result = defaultProduct;
-  expect(result.price).not.toEqual(1);
+  expect(result.price).toEqual(25);
 });
 
 it('expect category to equal category  value ', () => {
@@ -27,7 +27,7 @@ it('expect category to equal category  value ', () => {
 });
 it('expect id not equal to price value ', () => {
   const result = defaultProduct;
-  expect(result.price).not.toEqual('CLOTHING');
+  expect(result.category).toEqual('CLOTHING');
 });
 it('expect to render productList components', () => {
   const result = renderer.create(
