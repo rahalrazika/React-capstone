@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders DetailPage component 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="navbar"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="logo"
+        className="navbar-logo"
+        src="https://static.vecteezy.com/system/resources/previews/002/114/693/original/online-shop-logo-template-design-illustration-vector.jpg"
+      />
+    </a>
+    <div
+      className="nav-search"
+    >
+      <input
+        className="search-input"
+        onChange={[Function]}
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root nav-search-icon"
+        focusable="false"
+        onClick={[Function]}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+    </div>
+    <div
+      className="nav-links-container"
+    >
+      <a
+        className="nav-links"
+        href="/"
+        onClick={[Function]}
+      >
+        <div
+          className="nav-options"
+        >
+          <span
+            className="text-one"
+          >
+            Return
+          </span>
+          <span
+            className="text-two"
+          >
+            Home
+          </span>
+        </div>
+      </a>
+    </div>
+  </nav>
+  <div
+    className="productContainer"
+  >
+    <div
+      className="banner"
+    >
+      <img
+        alt="banner"
+        src="banner.jpg"
+      />
+    </div>
+    <div
+      className="container d-flex"
+    >
+      <div
+        className="lds-spinner"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+    </div>
+  </div>
+</div>
+`;

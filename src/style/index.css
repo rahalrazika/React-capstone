@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;1,700&display=swap");
+
+body {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container {
+  margin-left: 5px;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  margin-top: 1rem;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0.5));
+}
+
+.product {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20rem;
+  height: 30rem;
+  text-align: center;
+  margin: 2rem 2rem;
+  padding: 2rem;
+}
+
+.product img {
+  width: 12rem;
+  height: 19rem;
+  object-fit: contain;
+}
+
+.detail-image img {
+  width: 70%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.product img:hover {
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.product button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.product .title {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  color: #000;
+  height: 4rem;
+}
+
+.product .price {
+  color: rgb(197 190 190);
+  font-size: 22px;
+  margin-top: 1rem;
+}
+
+.detail-container {
+  width: 75%;
+  height: 25rem;
+  margin: 5rem 10rem;
+}
+
+.detail-description {
+  flex-direction: column;
+  height: 15rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: 2rem;
+  text-transform: uppercase;
+}
+
+.detail-description .category {
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+.detail-description .title {
+  height: 5rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.detail-description .price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.detail-description .description {
+  text-transform: lowercase;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+}
+
+.detail-description button {
+  background-color: white;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  text-align: center;
+  border: 5px solid #000;
+}
