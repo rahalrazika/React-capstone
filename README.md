@@ -14,7 +14,7 @@ This project consisted of building Store app  using React JavaScript library.
 
 
 ## Live Demo 🚀
-[Z-store](https://raza-store.herokuapp.com/)
+[Z-store](https://zstorere.netlify.app/)
 
 ## Getting Started 💻
 
