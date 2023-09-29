@@ -1,6 +1,6 @@
 # Z-store
 
-This project consisted of building Store app  using React JavaScript library.
+This project consisted of building a Store app  using React JavaScript library.
 
 ## Screenshots
 ![Game Scene](src/assets/screenshot.png)
