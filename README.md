@@ -31,7 +31,7 @@ $ git clone git@github.com:rahalrazika/React-capstone.git
 ```
 
 ## Testing 
-Below shows the following commands you will need to run tests:
+Below are the following commands you will need to run tests:
 1- Install Jest using yarn: 
 ```
 yarn add --dev jest
@@ -70,7 +70,7 @@ yarn test
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 ## Show your support
 
